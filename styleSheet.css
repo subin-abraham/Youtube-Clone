@@ -31,13 +31,6 @@
 
 }
 
-@media(max-width:800px) {
-    .headerCenterSection input {
-        display: none;
-    }
-
-}
-
 .headerCenterSection button {
     width: 50px;
     height: 40PX;
@@ -57,6 +50,42 @@
 .headerRightSection img {
     height: 24px;
 }
+@media(max-width:800px) {
+    .headerCenterSection input {
+        display: none;
+    }
+
+    .headerSection {
+        display: grid;
+        height: 50px;
+        grid-template-columns: 150px 1fr 250px;
+
+    }
+
+}
+
+@media(max-width:418px) {
+    .headerSection {
+        display: grid;
+        height: 50px;
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+    .HeaderLeftSection {
+        gap: 10px;
+    }
+
+    .headerRightSection {
+        width: 140px;
+        margin-right: 5px;
+        margin-left: 0px;
+    }
+
+
+
+}
+
 
 /* Side Content */
 .sideBar {
@@ -74,7 +103,8 @@
     height: 24px;
     margin-bottom: 5px;
 }
-.sideBarLink{
+
+.sideBarLink {
     font-size: 10px;
     height: 74px;
     display: flex;
@@ -123,6 +153,7 @@
     border-radius: 36px;
     margin-top: 12px;
 }
-.channelParentSection img{
+
+.channelParentSection img {
     cursor: pointer;
 }
