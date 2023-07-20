@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+.headerSection {
+    display: grid;
+    height: 50px;
+    grid-template-columns: 250px 1fr 250px;
+
+}
+
+.HeaderLeftSection {
+    display: flex;
+    /* flex-shrink: 0; */
+    gap: 20px;
+}
+
+.headerCenterSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerCenterSection input {
+    width: 50%;
+    height: 40px;
+    border: grey 1px solid;
+    padding: 10px;
+
+}
+
+@media(max-width:800px) {
+    .headerCenterSection input {
+        display: none;
+    }
+
+}
+
+.headerCenterSection button {
+    width: 50px;
+    height: 40PX;
+    border: grey 1px solid;
+}
+
+.headerRightSection {
+    display: flex;
+    align-items: center;
+    width: 182px;
+    justify-content: space-between;
+    margin-right: 24px;
+    margin-left: 29px;
+    flex-shrink: 0;
+}
+
+.headerRightSection img {
+    height: 24px;
+}
+
+/* Side Content */
+.sideBar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 50px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sideBar img {
+    height: 24px;
+    margin-bottom: 5px;
+}
+.sideBarLink{
+    font-size: 10px;
+    height: 74px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+/* Main COntent */
+.mainContent {
+    padding-left: 70px;
+    padding-top: 10px;
+
+}
+
+.mainContent h3 {
+    font-size: 14px;
+    font-weight: bolder;
+    line-height: 20px;
+}
+
+.mainContent h6 {
+    font-size: 12px;
+    color: #606060;
+}
+
+.channelDetails {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    cursor: pointer;
+}
+
+.channelDetails .channelImage {
+    display: block;
+}
+
+.channelDetails .channelContent {
+    display: block;
+    margin-top: 10px;
+}
+
+.channelDetails .channelImage img {
+    width: 36px;
+    border-radius: 36px;
+    margin-top: 12px;
+}
+.channelParentSection img{
+    cursor: pointer;
+}
